@@ -1,6 +1,6 @@
 $.ajax({ 
    type : "GET", 
-   url : "https://cors.io/?https://api.pubgtracker.com/v2/profile/pc/esplito?region=eu", 
+   url : "https://api.pubgtracker.com/v2/profile/pc/esplito?region=eu", 
    beforeSend: function(xhr){
    	xhr.setRequestHeader("content-type", "application/json");
    	xhr.setRequestHeader('trn-api-key', '2c10d855-5cec-4169-8747-78a8ea6dd37a');
@@ -13,3 +13,5 @@ $.ajax({
      //handle the error 
    } 
  }); 
+
+$.getJSON('https://cors.io/?https://api.pubgtracker.com/v2/profile/pc/esplito?region=eu',function(){})
