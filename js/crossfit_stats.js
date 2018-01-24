@@ -2,7 +2,7 @@ $.ajax({
    type : "GET", 
    url : "https://ypzgtalo10.execute-api.us-east-1.amazonaws.com/prod/CrossfitOpen2017", 
    beforeSend: function(xhr){
-    xhr.setRequestHeader("content-type", "application/json");
+    
    },
    success : function(result) { 
        //set your variable to the result
