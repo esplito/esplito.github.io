@@ -27,6 +27,7 @@ div{
 	margin-right: auto;
 	width: 90%;
 	text-align: center;
+	position: relative;
 }
 
 .row{
@@ -38,21 +39,31 @@ div{
 
 header{
 	width: 100%;
+	height: 420px;
+	margin-bottom: 50px;
+}
+
+header .main{
+	overflow: hidden;
+}
+
+#logo{
+	width: 600px;
 	height: 300px;
-	z-index: 1;
+	margin-top: -300px;
+	z-index: 999;
 }
 
 /* Barbell and lifter CSS */
 .lifter{
 	width: 380px;
-	height: 300px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 140px;
+	height: 400px;
+	margin: 50px auto 0px auto;
 	-webkit-animation: fadeIn 1.5s linear;
 	-o-animation: fadeIn 1.5s linear;
 	animation: fadeIn 1.5s linear;
 	position: relative;
+	z-index: -1;
 }
 .lifter > div{
 	background-color: #356E8C;
@@ -75,25 +86,25 @@ div[class*="barbell-p2"]{
 	border-radius: 50%;
 	width: 40px;
 	height: 90px;
-	z-index: 1;
+	z-index: 2;
 }
 div[class*="barbell-p3"]{
 	width: 30px;
 	height: 90px;
-	z-index: 1;
+	z-index: 2;
 }
 div[class*="barbell-p4"]{
 	border-radius: 50%;
 	width: 40px;
 	height: 90px;
-	z-index: 1;
+	z-index: 2;
 }
 
 .barbell-p1{
 	border-radius: 5px 0px 0px 5px;
 	width: 30px;
 	height: 17px;
-	z-index: 2;
+	z-index: 3;
 	left: 0px;
 }
 .barbell-p2-l{
@@ -249,13 +260,60 @@ div[class*="barbell-p4"]{
     left: 244px;
     border-radius: 60% 60% 70% 50%;
 }
+.lifter-lb{
+	width: 80px;
+	height: 62px;
+	-ms-transform: rotate(250deg);
+    -webkit-transform: rotate(250deg);
+    transform: rotate(250deg);
+    top: 243px;
+    left: 115px;
+    border-radius: 80% 90% 80% 80%;
+}
+.lifter-lc{
+	width: 85px;
+	height: 32px;
+	-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 274px;
+    left: 96px;
+    border-radius: 60% 60% 50% 50%;
+}
+.lifter-rb{
+	width: 80px;
+	height: 68px;
+    top: 242px;
+    left: 147px;
+    border-radius: 80% 80% 76% 0%;
+}
+.lifter-ru{
+	width: 90px;
+	height: 50px;
+	-ms-transform: rotate(143deg);
+    -webkit-transform: rotate(143deg);
+    transform: rotate(143deg);
+    top: 253px;
+    left: 180px;
+    border-radius: 120% 140% 0% 110%;
+}
+.lifter-rc{
+	width: 85px;
+	height: 32px;
+	-ms-transform: rotate(107deg);
+    -webkit-transform: rotate(107deg);
+    transform: rotate(107deg);
+    top: 274px;
+    left: 204px;
+    border-radius: 60% 60% 50% 50%;
+}
 
 /* Video CSS Main Page */
 
 .video-container{
 	width: 60.25%;
 	height: auto;
-	margin: 50px auto 50px auto;
+	margin: 0px auto 50px auto;
 	padding: 20px;
 	background-color: #356E8C;
 	display: inline-block;
@@ -326,11 +384,6 @@ i:hover{
 
 #container{
 	width: 100%;
-	position: absolute;
-	top: 0;
-	z-index: 1;
+	margin-top: 50px;
 }
-#logo{
-	width: 600px;
-	height: 300px;
-}
+
