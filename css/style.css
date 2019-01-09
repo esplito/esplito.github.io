@@ -1,3 +1,7 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body{
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
@@ -19,4 +23,8 @@ body{
 }
 .main h1{
 	font-weight: 800;
+}
+
+.main p{
+	font-size: 0.875rem;
 }
